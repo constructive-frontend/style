@@ -1,0 +1,46 @@
+form
+.form
+  .form_item
+    padding: 1em
+    > *
+      margin-bottom: 1em
+    .form_item_group
+      width: 100%
+      display: flex
+      .form_item_group_item
+        &.main
+          flex-grow: 1
+        &.noborder_left
+          input, textarea
+            border-left: none
+        &.noborder_right
+          input, textarea
+            border-right: none
+  input,textarea
+    border: 1px solid rgba(black, 0.15);
+    padding: 0.5em 1em
+    width: 100%
+    box-sizing: border-box
+
+  input[type="text"]
+  input[type="password"]
+
+  select
+    width: 100%
+    border: 1px solid rgba(black, 0.15);
+    background: none
+    padding: 0.5em 1em
+    option
+      padding: 0.5em 1em
+  button, input[type="submit"], input[type="reset"], input[type="button"]
+    display: block
+    border: 1px solid rgba(black, 0.15);
+    height: 100%
+    cursor: pointer
+  label
+    font-family: sans-serif
+    font-size: 0.9em
+    font-weight: bold
+
+  input[type="radio"],input[type="checkbox"]
+    width: 3em

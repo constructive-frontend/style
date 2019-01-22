@@ -1,0 +1,36 @@
+.btn, .btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-warning, .btn-info, .btn-light, .btn-dark, .btn-default {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0.5em 1em;
+  cursor: pointer; }
+
+.btn-primary {
+  background-color: #2196f3;
+  color: white; }
+
+.btn-secondary {
+  background-color: #969494;
+  color: white; }
+
+.btn-success {
+  background-color: #8bc34a;
+  color: white; }
+
+.btn-danger {
+  background-color: #ff5722;
+  color: white; }
+
+.btn-warning {
+  background-color: #ff9800;
+  color: white; }
+
+.btn-info {
+  background-color: #00bcd4;
+  color: white; }
+
+.btn-light {
+  background-color: #fff;
+  color: grey; }
+
+.btn-dark {
+  background-color: #222;
+  color: white; }

@@ -1,0 +1,46 @@
+.form .form_item {
+  padding: 1em; }
+  .form .form_item > * {
+    margin-bottom: 1em; }
+  .form .form_item .form_item_group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .form .form_item .form_item_group .form_item_group_item.main {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+    .form .form_item .form_item_group .form_item_group_item.noborder_left input, .form .form_item .form_item_group .form_item_group_item.noborder_left textarea {
+      border-left: none; }
+    .form .form_item .form_item_group .form_item_group_item.noborder_right input, .form .form_item .form_item_group .form_item_group_item.noborder_right textarea {
+      border-right: none; }
+
+.form input, .form textarea {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0.5em 1em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.form select {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: none;
+  padding: 0.5em 1em; }
+  .form select option {
+    padding: 0.5em 1em; }
+
+.form button, .form input[type="submit"], .form input[type="reset"], .form input[type="button"] {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  height: 100%;
+  cursor: pointer; }
+
+.form label {
+  font-family: sans-serif;
+  font-size: 0.9em;
+  font-weight: bold; }
+
+.form input[type="radio"], .form input[type="checkbox"] {
+  width: 3em; }

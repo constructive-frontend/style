@@ -1,0 +1,7 @@
+.democol {
+  background: lightblue;
+  border: 1px solid white;
+  padding: 0.5em;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
