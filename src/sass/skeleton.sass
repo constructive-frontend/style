@@ -1,0 +1,80 @@
+.skeleton
+  &-avatar
+    display: block
+    width: 100px
+    height: 100px
+    border-radius: 50%
+  &-img
+    display: block
+    width: 400px
+    height: 300px
+  &-title
+    display: block
+    width: 350px
+    height: 2.5em
+  &-label
+    display: block
+    width: 300px
+    height: 1em
+  &-text
+    display: flex
+    background: none !important
+    flex-direction: row
+    flex-wrap: wrap
+    &:before
+      background: none !important
+    div
+      background: #eee
+      height: 1em
+      display: block
+      margin-right: 1%
+      overflow: hidden
+    &-1
+      flex-basis: 7.333333%
+    &-2
+      flex-basis: 15.666666%
+    &-3
+      flex-basis: 23.999999%
+    &-4
+      flex-basis: 32.333332%
+    &-5
+      flex-basis: 40.666665%
+    &-6
+      flex-basis: 48.999998%
+    &-7
+      flex-basis: 57.333331%
+    &-8
+      flex-basis: 65.666664%
+    &-9
+      flex-basis: 73.999997%
+    &-10
+      flex-basis: 82.33333%
+    &-11
+      flex-basis: 90.666663%
+    &-12
+      flex-basis: 98.999996%
+
+.skeleton-avatar, .skeleton-img, .skeleton-title, .skeleton-label, .skeleton-text, .skeleton-text-1, .skeleton-text-2, .skeleton-text-3, .skeleton-text-4, .skeleton-text-5, .skeleton-text-6, .skeleton-text-7, .skeleton-text-8, .skeleton-text-9, .skeleton-text-10, .skeleton-text-11, .skeleton-text-12
+  background: #eee
+  margin-bottom: 1em
+  position: relative
+  overflow: hidden
+  &:before
+    content: " "
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 50%
+    z-index: 1
+    width: 500%
+    margin-left: -250%
+    animation: phAnimation 1.8s linear infinite
+    background: linear-gradient(to right, rgba(#fff, 0) 46%, rgba(#fff, .4) 50%, rgba(#fff, 0) 54%) 50% 50%
+
+@keyframes phAnimation
+  0%
+    transform: translate3d(-30%, 0, 0)
+  100%
+    transform: translate3d(30%, 0, 0)
+
