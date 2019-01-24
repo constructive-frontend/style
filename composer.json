@@ -1,0 +1,12 @@
+{
+    "name": "greeschenko/cfstyle",
+    "description": "easy and lightweight UI library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleksiy Hryshchenko",
+            "email": "greeschenko@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
