@@ -397,12 +397,15 @@ table.tbl-compact th {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-top: none;
   padding: 1em;
-  display: none; }
+  display: none;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
 
 .tab .tabcontents .tabcontentsitem.active {
   display: block; }
 
 .tab.vertical {
+  min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -411,3 +414,125 @@ table.tbl-compact th {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .tab.vertical .tabbtns .tabbtnsitem {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-right: 1em; }
+      .tab.vertical .tabbtns .tabbtnsitem:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+      .tab.vertical .tabbtns .tabbtnsitem.active {
+        border-right: none; }
+  .tab.vertical .tabcontents .tabcontentsitem {
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: none; }
+
+.sidenav .sidenavbtn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .sidenav .sidenavbtn .sidenavbtntitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5em; }
+  .sidenav .sidenavbtn .sidenavbtnicon {
+    font-size: 2em; }
+
+.sidenav .sidenavcontent {
+  position: fixed;
+  background: white;
+  padding: 1em;
+  z-index: 1000; }
+
+.sidenav.top .sidenavcontent {
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16), 3px 3px 16px rgba(0, 0, 0, 0.23);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16), 3px 3px 16px rgba(0, 0, 0, 0.23);
+  -webkit-transition: top .5s ease-out;
+  transition: top .5s ease-out; }
+
+.sidenav.top.active .sidenavcontent {
+  top: 0; }
+
+.sidenav.right .sidenavcontent {
+  top: 0;
+  right: -100vw;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16), 3px 3px 16px rgba(0, 0, 0, 0.23);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16), 3px 3px 16px rgba(0, 0, 0, 0.23);
+  -webkit-transition: right .5s ease-out;
+  transition: right .5s ease-out; }
+
+.sidenav.right.active .sidenavcontent {
+  right: 0; }
+
+.sidenav.bottom .sidenavcontent {
+  left: 0;
+  bottom: -100vh;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16), 3px 3px 16px rgba(0, 0, 0, 0.23);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16), 3px 3px 16px rgba(0, 0, 0, 0.23);
+  -webkit-transition: bottom .5s ease-out;
+  transition: bottom .5s ease-out; }
+
+.sidenav.bottom.active .sidenavcontent {
+  bottom: 0; }
+
+.sidenav.left .sidenavcontent {
+  top: 0;
+  left: -100vw;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16), 3px 3px 16px rgba(0, 0, 0, 0.23);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16), 3px 3px 16px rgba(0, 0, 0, 0.23);
+  -webkit-transition: left .5s ease-out;
+  transition: left .5s ease-out; }
+
+.sidenav.left.active .sidenavcontent {
+  left: 0; }
+
+.collapse .collapsebtn {
+  cursor: pointer; }
+
+.collapse .collapsecontent {
+  display: none; }
+
+.collapse.active .collapsecontent {
+  display: block; }
+
+.modal .modalcontent {
+  position: fixed;
+  top: -100vh;
+  left: 10vw;
+  width: 80vw;
+  background: white;
+  padding: 1em;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16), 3px 3px 16px rgba(0, 0, 0, 0.23);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16), 3px 3px 16px rgba(0, 0, 0, 0.23);
+  -webkit-transition: top .5s ease-out;
+  transition: top .5s ease-out; }
+
+.modal.active .modalcontent {
+  top: 20vh; }

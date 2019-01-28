@@ -1,0 +1,8 @@
+.collapse .collapsebtn {
+  cursor: pointer; }
+
+.collapse .collapsecontent {
+  display: none; }
+
+.collapse.active .collapsecontent {
+  display: block; }

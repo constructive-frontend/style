@@ -1,0 +1,68 @@
+.sidenav
+  .sidenavbtn
+    cursor: pointer
+    display: flex
+    .sidenavbtntitle
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: $padding
+    .sidenavbtnicon
+      font-size: 2em
+  .sidenavcontent
+    position: fixed
+    background: white
+    padding: $paddinglg
+    z-index: 1000
+
+.sidenav.top
+  .sidenavcontent
+    top: -100vh
+    left: 0
+    width: 100%
+    border-bottom: $line
+    box-shadow: 3px 3px 6px rgba(0,0,0,.16), 3px 3px 16px rgba(0,0,0,.23)
+    transition: top .5s ease-out
+
+.sidenav.top.active
+  .sidenavcontent
+    top: 0
+
+.sidenav.right
+  .sidenavcontent
+    top: 0
+    right: -100vw
+    height: 100%
+    border-bottom: $line
+    box-shadow: 3px 3px 6px rgba(0,0,0,.16), 3px 3px 16px rgba(0,0,0,.23)
+    transition: right .5s ease-out
+
+.sidenav.right.active
+  .sidenavcontent
+    right: 0
+
+.sidenav.bottom
+  .sidenavcontent
+    left: 0
+    bottom: -100vh
+    width: 100%
+    border-bottom: $line
+    box-shadow: 3px 3px 6px rgba(0,0,0,.16), 3px 3px 16px rgba(0,0,0,.23)
+    transition: bottom .5s ease-out
+
+.sidenav.bottom.active
+  .sidenavcontent
+    bottom: 0
+
+.sidenav.left
+  .sidenavcontent
+    top: 0
+    left: -100vw
+    height: 100%
+    border-bottom: $line
+    box-shadow: 3px 3px 6px rgba(0,0,0,.16), 3px 3px 16px rgba(0,0,0,.23)
+    transition: left .5s ease-out
+
+.sidenav.left.active
+  .sidenavcontent
+    left: 0

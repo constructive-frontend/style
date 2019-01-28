@@ -1,0 +1,6 @@
+.modal .modalcontent {
+  position: fixed;
+  top: 20vh;
+  left: 20vw;
+  width: 60vw;
+  background: white; }

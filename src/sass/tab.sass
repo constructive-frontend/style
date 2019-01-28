@@ -20,12 +20,29 @@
       border-top: none
       padding: $paddinglg
       display: none
+      transition: all 1s
     .tabcontentsitem.active
       display: block
 
 .tab.vertical
+  min-height: 300px
   display: flex
   .tabbtns
     flex-direction: column
-
+    .tabbtnsitem
+      border: $line
+      border-bottom: none
+      display: flex
+      justify-content: center
+      align-items: center
+      padding-right: $paddinglg
+      &:last-child
+        border-bottom: $line
+      &.active
+        border-right: none
+  .tabcontents
+    .tabcontentsitem
+      height: 100%
+      border: $line
+      border-left: none
 
