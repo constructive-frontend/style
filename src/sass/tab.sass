@@ -1,0 +1,31 @@
+.tab
+  .tabbtns
+    display: flex
+    justify-content: space-between
+    .tabbtnsitem
+      flex-grow: 1
+      text-align: center
+      padding: $padding
+      cursor: pointer
+      border-top: $line
+      border-bottom: $line
+      border-left: $line
+      &:last-child
+        border-right: $line
+      &.active
+        border-bottom: none
+  .tabcontents
+    .tabcontentsitem
+      border: $line
+      border-top: none
+      padding: $paddinglg
+      display: none
+    .tabcontentsitem.active
+      display: block
+
+.tab.vertical
+  display: flex
+  .tabbtns
+    flex-direction: column
+
+

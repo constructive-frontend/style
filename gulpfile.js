@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     livereload = require('gulp-livereload'),
     del = require('del'),
-    babel = require('gulp-babel');
+    babel = require('gulp-babel'),
+    browserify = require('gulp-browserify');
 
 //Libs
 gulp.task('libscss', function() {
@@ -66,13 +67,15 @@ gulp.task('html', function() {
 // Scripts
 gulp.task('scripts', function() {
     return gulp.src('src/js/**/*.js')
-        //.pipe(babel({
-        //presets: ['env']
-        //}))
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(rename({
             suffix: '.min'
         }))
         .pipe(uglify())
+        .pipe(gulp.dest('./web/js'))
+        .pipe(concat('cfstyle.min.js'))
         .pipe(gulp.dest('./web/js'))
         .pipe(livereload());
 });
