@@ -6,7 +6,13 @@ class Modal {
     init() {
         var self = this;
         this.el.find('.modalbtn').bind('click', function() {
-            self.el.toggleClass('active');
+            self.el.addClass('active');
+            $('<div/>', {
+                class: 'overlay',
+            }).bind('click', function() {
+                self.el.removeClass('active');
+                $(this).remove();
+            }).appendTo('body');
         });
     }
 }

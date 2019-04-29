@@ -1,1 +1,1 @@
-.modal .modalcontent{position:fixed;top:20vh;left:20vw;width:60vw;background:#fff}
+.modal .modalcontent{position:fixed;top:-100vh;left:10vw;width:80vw;background:#fff;padding:1em;box-shadow:3px 3px 6px rgba(0,0,0,.16),3px 3px 16px rgba(0,0,0,.23);transition:top .5s ease-out;z-index:1}.modal.active .modalcontent{top:20vh}

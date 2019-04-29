@@ -1,0 +1,40 @@
+.scrollspymenuitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.6); }
+  .scrollspymenuitem.active {
+    color: black; }
+  .scrollspymenuitem .ico {
+    text-align: center;
+    width: 1em; }
+  .scrollspymenuitem .title {
+    cursor: pointer; }
+
+.scrollspymenuitem.lvl2 {
+  margin-left: 0.5em; }
+
+.scrollspymenuitem.lvl3 {
+  margin-left: 1em; }
+
+.scrollspymenuitem.lvl4 {
+  margin-left: 1.5em; }
+
+.scrollspymenuitem.lvl5 {
+  margin-left: 2em; }
+
+.scrollspymenuitem.lvl6 {
+  margin-left: 2.5em; }
+
+.scrollspymenuitem.lvl7 {
+  margin-left: 3em; }
+
+.scrollspymenuitem.lvl8 {
+  margin-left: 3.5em; }
+
+.scrollspymenuitem.lvl9 {
+  margin-left: 4em; }
+
+.scrollspymenuitem.lvl10 {
+  margin-left: 4.5em; }

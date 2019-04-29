@@ -1,3 +1,5 @@
+@import "vars.sass"
+
 .skeleton
   &-avatar
     display: block
@@ -8,6 +10,8 @@
     display: block
     width: 400px
     height: 300px
+    @media (max-device-width: $break-small)
+      width: 100%
   &-title
     display: block
     width: 350px

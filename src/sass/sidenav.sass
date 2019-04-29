@@ -1,3 +1,5 @@
+@import "vars.sass"
+
 .sidenav
   .sidenavbtn
     cursor: pointer
@@ -36,6 +38,8 @@
     border-bottom: $line
     box-shadow: 3px 3px 6px rgba(0,0,0,.16), 3px 3px 16px rgba(0,0,0,.23)
     transition: right .5s ease-out
+    @media (max-device-width: $break-small)
+      width: 80%
 
 .sidenav.right.active
   .sidenavcontent
@@ -62,6 +66,8 @@
     border-bottom: $line
     box-shadow: 3px 3px 6px rgba(0,0,0,.16), 3px 3px 16px rgba(0,0,0,.23)
     transition: left .5s ease-out
+    @media (max-device-width: $break-small)
+      width: 80%
 
 .sidenav.left.active
   .sidenavcontent

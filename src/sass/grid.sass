@@ -1,29 +1,177 @@
+@import "vars.sass"
+
 .col
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  &-1
+  .col-1
     width: 8.333333%
-  &-2
+  .col-2
     width: 16.666666%
-  &-3
+  .col-3
     width: 24.999999%
-  &-4
+  .col-4
     width: 33.333332%
-  &-5
+  .col-5
     width: 41.666665%
-  &-6
+  .col-6
     width: 49.999998%
-  &-7
+  .col-7
     width: 58.333331%
-  &-8
+  .col-8
     width: 66.666664%
-  &-9
+  .col-9
     width: 74.999997%
-  &-10
+  .col-10
     width: 83.33333%
-  &-11
+  .col-11
     width: 91.666663%
-  &-12
+  .col-12
     width: 99.999996%
+  @media (max-device-width: $break-small)
+    .col-1
+      width: 99.999996%
+    .col-2
+      width: 99.999996%
+    .col-3
+      width: 99.999996%
+    .col-4
+      width: 99.999996%
+    .col-5
+      width: 99.999996%
+    .col-6
+      width: 99.999996%
+    .col-7
+      width: 99.999996%
+    .col-8
+      width: 99.999996%
+    .col-9
+      width: 99.999996%
+    .col-10
+      width: 99.999996%
+    .col-11
+      width: 99.999996%
+    .col-12
+      width: 99.999996%
+
+.flex
+  display: flex
+
+.flex-direction-row
+  flex-direction: row
+.flex-direction-row-reverse
+  flex-direction: row-reverse
+.flex-direction-column
+  flex-direction: column
+.flex-direction-column-reverse
+  flex-direction: column-reverse
+
+.flex-wrap-nowrap
+  flex-wrap: nowrap
+.flex-wrap-wrap
+  flex-wrap: wrap
+.flex-wrap-wrap-reverse
+  flex-wrap: wrap-reverse
+
+
+.justify-content-flex-start
+  justify-content: flex-start
+.justify-content-flex-end
+  justify-content: flex-end
+.justify-content-center
+  justify-content: center
+.justify-content-space-between
+  justify-content: space-between
+.justify-content-space-around
+  justify-content: space-around
+.justify-content-space-evenly
+  justify-content: space-evenly
+
+.align-items-stretch
+  align-items: stretch
+.align-items-flex-start
+  align-items: flex-start
+.align-items-flex-end
+  align-items: flex-end
+.align-items-center
+  align-items: center
+.align-items-baseline
+  align-items: baseline
+
+
+.align-content-flex-start
+  align-content: flex-start
+.align-content-flex-end
+  align-content: flex-end
+.align-content-center
+  align-content: center
+.align-content-space-between
+  align-content: space-between
+.align-content-space-around
+  align-content: space-around
+.align-content-stretch
+  align-content: stretch
+
+.order-1
+  order: 1
+.order-2
+  order: 2
+.order-3
+  order: 3
+.order-4
+  order: 4
+.order-5
+  order: 5
+.order-6
+  order: 6
+.order-7
+  order: 7
+.order-8
+  order: 8
+.order-9
+  order: 9
+.order-10
+  order: 10
+.order-11
+  order: 11
+.order-12
+  order: 12
+
+.flex-grow-1
+  flex-grow: 1
+.flex-grow-2
+  flex-grow: 2
+.flex-grow-3
+  flex-grow: 3
+.flex-grow-4
+  flex-grow: 4
+.flex-grow-5
+  flex-grow: 5
+.flex-grow-6
+  flex-grow: 6
+.flex-grow-7
+  flex-grow: 7
+.flex-grow-8
+  flex-grow: 8
+.flex-grow-9
+  flex-grow: 9
+.flex-grow-10
+  flex-grow: 10
+.flex-grow-11
+  flex-grow: 11
+.flex-grow-12
+  flex-grow: 12
+
+.align-self-auto
+  align-self: auto
+.align-self-flex-start
+  align-self: flex-start
+.align-self-flex-end
+  align-self: flex-end
+.align-self-center
+  align-self: center
+.align-self-baseline
+  align-self: baseline
+.align-self-stretch
+  align-self: stretch
 
