@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+*:focus {
+  outline: none; }
+
 body {
   color: #222;
   line-height: 1.33; }
@@ -126,6 +129,61 @@ dl.descr-horizontal {
   background: #ccc;
   opacity: 0.7;
   z-index: 1; }
+
+.padding {
+  padding: 0.5em; }
+
+.padding-t {
+  padding-top: 1em; }
+
+.padding-r {
+  padding-right: 1em; }
+
+.padding-b {
+  padding-bottom: 1em; }
+
+.padding-l {
+  padding-left: 1em; }
+
+.margin {
+  margin: 0.5em; }
+
+.margin-t {
+  margin-top: 1em; }
+
+.margin-r {
+  margin-right: 1em; }
+
+.margin-b {
+  margin-bottom: 1em; }
+
+.margin-l {
+  margin-left: 1em; }
+
+.no-border {
+  border: none !important; }
+
+.no-border-t {
+  border-top: none !important; }
+
+.no-border-r {
+  border-right: none !important; }
+
+.no-border-b {
+  border-bottom: none !important; }
+
+.no-border-l {
+  border-left: none !important; }
+
+.full {
+  height: 100%;
+  width: 100%; }
+
+.fullheight {
+  height: 100%; }
+
+.fullwidth {
+  width: 100%; }
 
 .col {
   display: -webkit-box;
@@ -450,30 +508,15 @@ dl.descr-horizontal {
   -ms-flex-item-align: stretch;
       align-self: stretch; }
 
-.form .form_item {
-  padding: 1em; }
-  .form .form_item > * {
-    margin-bottom: 1em; }
-  .form .form_item .form_item_group {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .form .form_item .form_item_group .form_item_group_item.main {
-      -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1; }
-    .form .form_item .form_item_group .form_item_group_item.noborder_left input, .form .form_item .form_item_group .form_item_group_item.noborder_left textarea {
-      border-left: none; }
-    .form .form_item .form_item_group .form_item_group_item.noborder_right input, .form .form_item .form_item_group .form_item_group_item.noborder_right textarea {
-      border-right: none; }
-
 .form input, .form textarea {
   border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 0.5em 1em;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+.form textarea {
+  margin-bottom: -5px; }
 
 .form select {
   width: 100%;
@@ -486,7 +529,6 @@ dl.descr-horizontal {
 .form button, .form input[type="submit"], .form input[type="reset"], .form input[type="button"] {
   display: block;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  height: 100%;
   cursor: pointer; }
 
 .form label {
