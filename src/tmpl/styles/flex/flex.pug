@@ -1,0 +1,42 @@
+h2(class="scrollspy" data-lvl="2" data-title="Flex" data-ico="fa-angle-right") Flex
+
+pre
+    | <div class="flex">
+    |   <div class="btn flex-grow-1 no-border-r">Main</div>
+    |   <div class="btn no-border-r">Second</div>
+    |   <div class="btn">Therd</div>
+    | </div>
+
+.flex
+    div.btn.flex-grow-1.no-border-r Main
+    div.btn.no-border-r Second
+    div.btn Therd
+
+pre
+    | <div class="flex justify-content-space-between">
+    |   <div class="btn flex-grow-1 txt-center">One</div>
+    |   <div class="btn flex-grow-1 txt-center">Two Two Two Two</div>
+    |   <div class="btn flex-grow-1 txt-center">Three</div>
+    |   <div class="btn flex-grow-1 txt-center">Four</div>
+    | </div>
+
+.flex.justify-content-space-between
+    div.btn.flex-grow-1.txt-center One
+    div.btn.flex-grow-1.txt-center Two Two Two Two
+    div.btn.flex-grow-1.txt-center Three
+    div.btn.flex-grow-1.txt-center Four
+
+pre
+    | <div class="flex flex-direction-column">
+    |   <div class="btn flex-grow-1 txt-center order-2">Two Two Two Two</div>
+    |   <div class="btn flex-grow-1 txt-center order-3">Three</div>
+    |   <div class="btn flex-grow-1 txt-center order-1">One</div>
+    |   <div class="btn flex-grow-1 txt-center order-4">Four</div>
+    | </div>
+
+.flex.flex-direction-column
+    div.btn.flex-grow-1.txt-center.order-2 Two Two Two Two
+    div.btn.flex-grow-1.txt-center.order-3 Three
+    div.btn.flex-grow-1.txt-center.order-1 One
+    div.btn.flex-grow-1.txt-center.order-4 Four
+
