@@ -11,8 +11,18 @@ form
   textarea
     margin-bottom: -5px
 
-  input[type="text"]
-  input[type="password"]
+  input[type="text"], input[type="password"], textarea
+    transition: 0.5s background ease-in-out
+    &:focus
+      border: 1px solid rgba(lightblue, 0.5)
+      background: rgba(lightblue, 0.3)
+    &.error
+      border: 1px solid rgba(tomato, 0.2)
+      background: rgba(tomato,0.5);
+    &.success
+      border: 1px solid rgba(30, 241, 30, 0.5)
+      background: rgba(30, 241, 30, 0.5);
+
 
   select
     width: 100%
@@ -29,6 +39,22 @@ form
     font-family: sans-serif
     font-size: 0.9em
     font-weight: bold
+    &.error
+      color: rgba(tomato,1);
+    &.success
+      color: rgba(green,1);
 
   input[type="radio"],input[type="checkbox"]
     width: 3em
+
+  .errors
+    font-family: monospace
+    font-size: 0.8em
+    color: red
+    padding: 0.5em
+
+  .hints
+    font-size: 0.8em
+    color: #6b6b6b
+    padding: 0.5em
+

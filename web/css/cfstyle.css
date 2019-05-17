@@ -521,6 +521,19 @@ dl.descr-horizontal {
 .form textarea {
   margin-bottom: -5px; }
 
+.form input[type="text"], .form input[type="password"], .form textarea {
+  -webkit-transition: 0.5s background ease-in-out;
+  transition: 0.5s background ease-in-out; }
+  .form input[type="text"]:focus, .form input[type="password"]:focus, .form textarea:focus {
+    border: 1px solid rgba(173, 216, 230, 0.5);
+    background: rgba(173, 216, 230, 0.3); }
+  .form input[type="text"].error, .form input[type="password"].error, .form textarea.error {
+    border: 1px solid rgba(255, 99, 71, 0.2);
+    background: rgba(255, 99, 71, 0.5); }
+  .form input[type="text"].success, .form input[type="password"].success, .form textarea.success {
+    border: 1px solid rgba(30, 241, 30, 0.5);
+    background: rgba(30, 241, 30, 0.5); }
+
 .form select {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -538,9 +551,24 @@ dl.descr-horizontal {
   font-family: sans-serif;
   font-size: 0.9em;
   font-weight: bold; }
+  .form label.error {
+    color: tomato; }
+  .form label.success {
+    color: green; }
 
 .form input[type="radio"], .form input[type="checkbox"] {
   width: 3em; }
+
+.form .errors {
+  font-family: monospace;
+  font-size: 0.8em;
+  color: red;
+  padding: 0.5em; }
+
+.form .hints {
+  font-size: 0.8em;
+  color: #6b6b6b;
+  padding: 0.5em; }
 
 .btn, .btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-warning, .btn-info, .btn-light, .btn-dark, .btn-default {
   border: 1px solid rgba(0, 0, 0, 0.15);
