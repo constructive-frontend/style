@@ -10,6 +10,14 @@ class Sidenav {
             self.el.toggleClass('active');
             self.el.find('.sidenavbtnicon').find('.fa').toggleClass('fa-bars');
             self.el.find('.sidenavbtnicon').find('.fa').toggleClass('fa-times');
+            $('<div/>', {
+                class: 'overlay',
+            }).bind('click', function() {
+                self.el.toggleClass('active');
+                self.el.find('.sidenavbtnicon').find('.fa').toggleClass('fa-bars');
+                self.el.find('.sidenavbtnicon').find('.fa').toggleClass('fa-times');
+                $(this).remove();
+            }).appendTo('body');
         });
     }
 }

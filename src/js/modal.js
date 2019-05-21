@@ -1,6 +1,7 @@
 class Modal {
     constructor(el) {
         this.el = el;
+        this.overlay = {};
         this.init();
     }
     init() {
@@ -10,10 +11,18 @@ class Modal {
             $('<div/>', {
                 class: 'overlay',
             }).bind('click', function() {
-                self.el.removeClass('active');
-                $(this).remove();
+                self.hide();
             }).appendTo('body');
+            self.overlay = $('.overlay');
+            self.el.find('.modalcontent-header-close').bind('click', function() {
+                self.hide();
+            });
         });
+    }
+    hide() {
+        var self = this;
+        self.el.removeClass('active');
+        self.overlay.remove();
     }
 }
 

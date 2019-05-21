@@ -30,6 +30,8 @@
   min-height: 300px
   display: flex
   .tabbtns
+    min-width: 200px
+    max-width: 200px
     flex-direction: column
     .tabbtnsitem
       border: $line
@@ -43,8 +45,10 @@
       &.active
         border-right: none
   .tabcontents
+    flex-grow: 1
     .tabcontentsitem
       height: 100%
+      width: 100%
       border: $line
       border-left: none
 

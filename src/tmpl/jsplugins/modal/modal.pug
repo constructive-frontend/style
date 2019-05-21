@@ -1,12 +1,32 @@
 h2(class="scrollspy" data-lvl="2" data-title="Modal" data-ico="fa-angle-right") Modal
 pre
     | <div class="modal">
-    |   <div class="modalbtn primary">Click to show modal block</div>
-    |   <div class="modalcontent"></div>
+    |     <div class="modalbtn primary">Click to show modal block</div>
+    |     <div class="modalcontent">
+    |         <div class="modalcontent-header">
+    |             <div class="modalcontent-header-content">Cool modal title</div>
+    |             <div class="modalcontent-header-close"><i class="fa fa-times"></i></div>
+    |         </div>
+    |         <p></p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+    |         tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+    |         vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+    |         no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    |         <p></p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+    |         tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+    |         vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+    |         no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    |         <div class="modalcontent-footer">cool modal footer</div>
+    |     </div>
     | </div>
+
 div.modal
     div.modalbtn.primary Click to show modal block
     div.modalcontent
+        div.modalcontent-header
+            div.modalcontent-header-content
+                | Cool modal title
+            div.modalcontent-header-close
+                i.fa.fa-times
         p
         | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
         | tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
@@ -17,3 +37,5 @@ div.modal
         | tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
         | vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
         | no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        div.modalcontent-footer
+            | cool modal footer

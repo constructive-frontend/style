@@ -128,7 +128,7 @@ dl.descr-horizontal {
   height: 100%;
   background: #ccc;
   opacity: 0.7;
-  z-index: 1; }
+  z-index: 5000; }
 
 .padding {
   padding: 0.5em; }
@@ -187,6 +187,42 @@ dl.descr-horizontal {
 .fullwidth {
   width: 100%;
   padding: 0 !important; }
+
+.z1 {
+  z-index: 1; }
+
+.z2 {
+  z-index: 2; }
+
+.z3 {
+  z-index: 3; }
+
+.z4 {
+  z-index: 4; }
+
+.z5 {
+  z-index: 5; }
+
+.z6 {
+  z-index: 6; }
+
+.z7 {
+  z-index: 7; }
+
+.z8 {
+  z-index: 8; }
+
+.z9 {
+  z-index: 9; }
+
+.z10 {
+  z-index: 10; }
+
+.z11 {
+  z-index: 11; }
+
+.z12 {
+  z-index: 12; }
 
 .col {
   display: -webkit-box;
@@ -791,6 +827,8 @@ table.tbl-compact th {
   display: -ms-flexbox;
   display: flex; }
   .tab.vertical .tabbtns {
+    min-width: 200px;
+    max-width: 200px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -812,10 +850,15 @@ table.tbl-compact th {
         border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
       .tab.vertical .tabbtns .tabbtnsitem.active {
         border-right: none; }
-  .tab.vertical .tabcontents .tabcontentsitem {
-    height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-left: none; }
+  .tab.vertical .tabcontents {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+    .tab.vertical .tabcontents .tabcontentsitem {
+      height: 100%;
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-left: none; }
 
 .sidenav .sidenavbtn {
   cursor: pointer;
@@ -840,7 +883,7 @@ table.tbl-compact th {
   position: fixed;
   background: white;
   padding: 1em;
-  z-index: 1000; }
+  z-index: 6000; }
 
 .sidenav.top .sidenavcontent {
   top: -100vh;
@@ -921,6 +964,26 @@ table.tbl-compact th {
   -webkit-transition: top .5s ease-out;
   transition: top .5s ease-out;
   z-index: 10000; }
+
+.modal .modalcontent-header {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .modal .modalcontent-header .modalcontent-header-content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-weight: bold; }
+  .modal .modalcontent-header .modalcontent-header-close {
+    cursor: pointer; }
+    .modal .modalcontent-header .modalcontent-header-close:hover {
+      opacity: 0.7; }
+
+.modal .modalcontent-footer {
+  font-size: 0.8em;
+  color: grey;
+  margin-top: 1em; }
 
 .modal.active .modalcontent {
   top: 20vh; }

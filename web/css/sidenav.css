@@ -21,7 +21,7 @@
   position: fixed;
   background: white;
   padding: 1em;
-  z-index: 1000; }
+  z-index: 6000; }
 
 .sidenav.top .sidenavcontent {
   top: -100vh;
