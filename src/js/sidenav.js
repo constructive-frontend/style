@@ -17,7 +17,7 @@ class Sidenav {
                 self.el.find('.sidenavbtnicon').find('.fa').toggleClass('fa-bars');
                 self.el.find('.sidenavbtnicon').find('.fa').toggleClass('fa-times');
                 $(this).remove();
-            }).appendTo('body');
+            }).appendTo(self.el);
         });
     }
 }

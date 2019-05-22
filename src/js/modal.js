@@ -12,7 +12,7 @@ class Modal {
                 class: 'overlay',
             }).bind('click', function() {
                 self.hide();
-            }).appendTo('body');
+            }).appendTo(self.el);
             self.overlay = $('.overlay');
             self.el.find('.modalcontent-header-close').bind('click', function() {
                 self.hide();
