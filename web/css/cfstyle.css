@@ -576,7 +576,8 @@ dl.descr-horizontal {
   background: none;
   padding: 0.5em 1em; }
   .form select.error {
-    color: tomato; }
+    border: 1px solid rgba(255, 99, 71, 0.2);
+    background: rgba(255, 99, 71, 0.5); }
   .form select option {
     padding: 0.5em 1em; }
 
