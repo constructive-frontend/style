@@ -1,0 +1,50 @@
+@import "vars.sass"
+
+ul.navs
+  margin-left: 0
+  list-style: none
+  li
+    margin-top: -1px
+    a
+      padding: $padding $paddinglg
+      color: #222
+      display: block
+      text-decoration: none
+      border: 1px solid #ddd
+      &:hover
+        background-color: #2196f3
+        color: white
+      &.active
+        background-color: #2196f3
+        color: white
+    ul
+      display: none
+      margin-left: 0
+      list-style: none
+      li
+        a
+          padding-left: 2em
+        ul
+          li
+            a
+              padding-left: 4em
+            ul
+              li
+                a
+                  padding-left: 6em
+                ul
+                  li
+                    a
+                      padding-left: 8em
+
+
+ul.navs.horizontal
+  display: flex
+  li
+    flex-grow: 1
+    margin-left: -1px
+    a
+    ul
+      li
+        margin-left: 0
+        a

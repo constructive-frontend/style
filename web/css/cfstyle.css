@@ -1039,3 +1039,54 @@ pre {
   margin-bottom: 1em;
   margin-top: 1em;
   overflow: auto; }
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  background: white;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+ul.navs {
+  margin-left: 0;
+  list-style: none; }
+  ul.navs li {
+    margin-top: -1px; }
+    ul.navs li a {
+      padding: 0.5em 1em;
+      color: #222;
+      display: block;
+      text-decoration: none;
+      border: 1px solid #ddd; }
+      ul.navs li a:hover {
+        background-color: #2196f3;
+        color: white; }
+      ul.navs li a.active {
+        background-color: #2196f3;
+        color: white; }
+    ul.navs li ul {
+      display: none;
+      margin-left: 0;
+      list-style: none; }
+      ul.navs li ul li a {
+        padding-left: 2em; }
+      ul.navs li ul li ul li a {
+        padding-left: 4em; }
+      ul.navs li ul li ul li ul li a {
+        padding-left: 6em; }
+      ul.navs li ul li ul li ul li ul li a {
+        padding-left: 8em; }
+
+ul.navs.horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  ul.navs.horizontal li {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-left: -1px; }
+    ul.navs.horizontal li ul li {
+      margin-left: 0; }
