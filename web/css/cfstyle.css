@@ -1062,6 +1062,7 @@ ul.navs {
       border: 1px solid #ddd; }
       ul.navs li a:hover {
         background-color: #2196f3;
+        border-color: #2196f3;
         color: white; }
       ul.navs li a.active {
         background-color: #2196f3;
