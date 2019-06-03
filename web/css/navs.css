@@ -4,6 +4,7 @@ ul.navs {
   ul.navs li {
     margin-top: -1px; }
     ul.navs li a {
+      background-color: white;
       padding: 0.5em 1em;
       color: #222;
       display: block;

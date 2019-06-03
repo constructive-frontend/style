@@ -130,7 +130,7 @@ dl.descr-horizontal {
   z-index: 5000; }
 
 .padding {
-  padding: 0.5em; }
+  padding: 1em; }
 
 .padding-t {
   padding-top: 1em; }
@@ -145,7 +145,7 @@ dl.descr-horizontal {
   padding-left: 1em; }
 
 .margin {
-  margin: 0.5em; }
+  margin: 1em; }
 
 .margin-t {
   margin-top: 1em; }
@@ -1054,6 +1054,7 @@ ul.navs {
   ul.navs li {
     margin-top: -1px; }
     ul.navs li a {
+      background-color: white;
       padding: 0.5em 1em;
       color: #222;
       display: block;
