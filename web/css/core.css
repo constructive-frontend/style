@@ -144,6 +144,36 @@ dl.descr-horizontal {
 .padding-l {
   padding-left: 1em; }
 
+.padding-lg {
+  padding: 2em; }
+
+.padding-lg-t {
+  padding-top: 2em; }
+
+.padding-lg-r {
+  padding-right: 2em; }
+
+.padding-lg-b {
+  padding-bottom: 2em; }
+
+.padding-lg-l {
+  padding-left: 2em; }
+
+.padding-sm {
+  padding: 0.5em; }
+
+.padding-sm-t {
+  padding-top: 0.5em; }
+
+.padding-sm-r {
+  padding-right: 0.5em; }
+
+.padding-sm-b {
+  padding-bottom: 0.5em; }
+
+.padding-sm-l {
+  padding-left: 0.5em; }
+
 .margin {
   margin: 1em; }
 
@@ -158,6 +188,36 @@ dl.descr-horizontal {
 
 .margin-l {
   margin-left: 1em; }
+
+.margin-lg {
+  margin: 2em; }
+
+.margin-lg-t {
+  margin-top: 2em; }
+
+.margin-lg-r {
+  margin-right: 2em; }
+
+.margin-lg-b {
+  margin-bottom: 2em; }
+
+.margin-lg-l {
+  margin-left: 2em; }
+
+.margin-sm {
+  margin: 0.5em; }
+
+.margin-sm-t {
+  margin-top: 0.5em; }
+
+.margin-sm-r {
+  margin-right: 0.5em; }
+
+.margin-sm-b {
+  margin-bottom: 0.5em; }
+
+.margin-sm-l {
+  margin-left: 0.5em; }
 
 .no-border {
   border: none !important; }

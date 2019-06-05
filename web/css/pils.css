@@ -1,0 +1,55 @@
+.pils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: grey;
+  padding: 0.5em 1em;
+  border-radius: 1.3em;
+  color: white;
+  -webkit-box-shadow: 1px 2px 2px black;
+          box-shadow: 1px 2px 2px black; }
+  .pils .pils_name {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .pils .pils_value {
+    font-size: 0.85em;
+    background: white;
+    color: grey;
+    border-radius: 1em;
+    padding: 0 0.5em;
+    padding-top: 0.2em; }
+  .pils.pils-primary {
+    background: #2196f3; }
+    .pils.pils-primary .pils_value {
+      color: #2196f3; }
+  .pils.pils-secondary {
+    background: #969494; }
+    .pils.pils-secondary .pils_value {
+      color: #969494; }
+  .pils.pils-success {
+    background: #8bc34a; }
+    .pils.pils-success .pils_value {
+      color: #8bc34a; }
+  .pils.pils-danger {
+    background: #ff5722; }
+    .pils.pils-danger .pils_value {
+      color: #ff5722; }
+  .pils.pils-warning {
+    background: #ff9800; }
+    .pils.pils-warning .pils_value {
+      color: #ff9800; }
+  .pils.pils-info {
+    background: #00bcd4; }
+    .pils.pils-info .pils_value {
+      color: #00bcd4; }
+  .pils.pils-light {
+    background: #fff;
+    color: grey; }
+    .pils.pils-light .pils_value {
+      color: #fff;
+      background: grey; }
+  .pils.pils-dark {
+    background: #222; }
+    .pils.pils-dark .pils_value {
+      color: #222; }

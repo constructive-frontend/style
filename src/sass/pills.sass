@@ -1,0 +1,51 @@
+.pills
+  display: flex
+  background: grey
+  padding: 0.5em 1em
+  border-radius: 1.3em
+  color: white
+  box-shadow: 1px 2px 2px black
+  .pills_name
+    flex-grow: 1
+  .pills_value
+    font-size: 0.85em
+    background: white
+    color: grey
+    border-radius: 1em
+    padding: 0 0.5em
+    padding-top: 0.2em
+  &.pills-primary
+    background: #2196f3
+    .pills_value
+      color: #2196f3
+  &.pills-secondary
+    background: #969494
+    .pills_value
+      color: #969494
+  &.pills-success
+    background: #8bc34a
+    .pills_value
+      color: #8bc34a
+  &.pills-danger
+    background: #ff5722
+    .pills_value
+      color: #ff5722
+  &.pills-warning
+    background: #ff9800
+    .pills_value
+      color: #ff9800
+  &.pills-info
+    background: #00bcd4
+    .pills_value
+      color: #00bcd4
+  &.pills-light
+    background: #fff
+    color: grey
+    .pills_value
+      color: #fff
+      background: grey
+  &.pills-dark
+    background: #222
+    .pills_value
+      color: #222
+

@@ -144,6 +144,36 @@ dl.descr-horizontal {
 .padding-l {
   padding-left: 1em; }
 
+.padding-lg {
+  padding: 2em; }
+
+.padding-lg-t {
+  padding-top: 2em; }
+
+.padding-lg-r {
+  padding-right: 2em; }
+
+.padding-lg-b {
+  padding-bottom: 2em; }
+
+.padding-lg-l {
+  padding-left: 2em; }
+
+.padding-sm {
+  padding: 0.5em; }
+
+.padding-sm-t {
+  padding-top: 0.5em; }
+
+.padding-sm-r {
+  padding-right: 0.5em; }
+
+.padding-sm-b {
+  padding-bottom: 0.5em; }
+
+.padding-sm-l {
+  padding-left: 0.5em; }
+
 .margin {
   margin: 1em; }
 
@@ -158,6 +188,36 @@ dl.descr-horizontal {
 
 .margin-l {
   margin-left: 1em; }
+
+.margin-lg {
+  margin: 2em; }
+
+.margin-lg-t {
+  margin-top: 2em; }
+
+.margin-lg-r {
+  margin-right: 2em; }
+
+.margin-lg-b {
+  margin-bottom: 2em; }
+
+.margin-lg-l {
+  margin-left: 2em; }
+
+.margin-sm {
+  margin: 0.5em; }
+
+.margin-sm-t {
+  margin-top: 0.5em; }
+
+.margin-sm-r {
+  margin-right: 0.5em; }
+
+.margin-sm-b {
+  margin-bottom: 0.5em; }
+
+.margin-sm-l {
+  margin-left: 0.5em; }
 
 .no-border {
   border: none !important; }
@@ -1091,3 +1151,59 @@ ul.navs.horizontal {
     margin-left: -1px; }
     ul.navs.horizontal li ul li {
       margin-left: 0; }
+
+.pills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: grey;
+  padding: 0.5em 1em;
+  border-radius: 1.3em;
+  color: white;
+  -webkit-box-shadow: 1px 2px 2px black;
+          box-shadow: 1px 2px 2px black; }
+  .pills .pills_name {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .pills .pills_value {
+    font-size: 0.85em;
+    background: white;
+    color: grey;
+    border-radius: 1em;
+    padding: 0 0.5em;
+    padding-top: 0.2em; }
+  .pills.pills-primary {
+    background: #2196f3; }
+    .pills.pills-primary .pills_value {
+      color: #2196f3; }
+  .pills.pills-secondary {
+    background: #969494; }
+    .pills.pills-secondary .pills_value {
+      color: #969494; }
+  .pills.pills-success {
+    background: #8bc34a; }
+    .pills.pills-success .pills_value {
+      color: #8bc34a; }
+  .pills.pills-danger {
+    background: #ff5722; }
+    .pills.pills-danger .pills_value {
+      color: #ff5722; }
+  .pills.pills-warning {
+    background: #ff9800; }
+    .pills.pills-warning .pills_value {
+      color: #ff9800; }
+  .pills.pills-info {
+    background: #00bcd4; }
+    .pills.pills-info .pills_value {
+      color: #00bcd4; }
+  .pills.pills-light {
+    background: #fff;
+    color: grey; }
+    .pills.pills-light .pills_value {
+      color: #fff;
+      background: grey; }
+  .pills.pills-dark {
+    background: #222; }
+    .pills.pills-dark .pills_value {
+      color: #222; }
