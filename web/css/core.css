@@ -234,6 +234,36 @@ dl.descr-horizontal {
 .no-border-l {
   border-left: none !important; }
 
+.no-padding {
+  padding: none !important; }
+
+.no-padding-t {
+  padding-top: none !important; }
+
+.no-padding-r {
+  padding-right: none !important; }
+
+.no-padding-b {
+  padding-bottom: none !important; }
+
+.no-padding-l {
+  padding-left: none !important; }
+
+.no-margin {
+  margin: none !important; }
+
+.no-margin-t {
+  margin-top: none !important; }
+
+.no-margin-r {
+  margin-right: none !important; }
+
+.no-margin-b {
+  margin-bottom: none !important; }
+
+.no-margin-l {
+  margin-left: none !important; }
+
 .full {
   height: 100%;
   width: 100%;
